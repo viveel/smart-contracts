@@ -1,0 +1,56 @@
+Generating typings for: 5 artifacts in dir: typechain for target: ethers-v5
+Successfully generated 11 typings!
+Compiled 5 Solidity files successfully
+
+  ApeCoin ERC20 Standard Test
+    Contract Initialization
+      ✓ Should correctly deploy the contract (0ms)
+      ✓ Should correctly report the token balance of the contract owner (10ms)
+      ✓ Should correctly report the token balance of any other address (4ms)
+      ✓ Should correctly report the token name (11ms)
+      ✓ Should correctly report the token symbol (5ms)
+      ✓ Should correctly report the token decimals (4ms)
+      ✓ Should correctly report the token total supply (5ms)
+    Token Transfer Functionality
+      ✓ Should correctly transfer tokens from the sender to the recipient (33ms)
+      ✓ Should correctly emit a Transfer event on token transfer (24ms)
+      ✓ Should revert when sender does not have sufficient balance for transfer (31ms)
+    Token transferFrom Functionality
+      ✓ Should correctly transfer tokens from the sender to the recipient using transferFrom function (33ms)
+      ✓ Should correctly update the balances of the sender, recipient, and spender on transferFrom function (39ms)
+      ✓ Should correctly emit a Transfer event on transferFrom function (26ms)
+      ✓ Should revert when spender does not have a sufficient allowance on transferFrom function (22ms)
+      ✓ Should revert when sender does not have a sufficient balance on transferFrom function (22ms)
+    Token Allowance Functionality
+      ✓ Should correctly set allowance for spender using approve function (46ms)
+      ✓ Should correctly emit an Approval event on allowance setting using approve function (21ms)
+      ✓ Should correctly report allowance for spender using allowance function (24ms)
+      ✓ Should correctly increase allowance for spender using increaseAllowance function (34ms)
+      ✓ Should correctly emit an Approval event on allowance increase using increaseAllowance function (22ms)
+      ✓ Should correctly decrease allowance for spender using decreaseAllowance function (48ms)
+      ✓ Should correctly emit an Approval event on allowance decrease using decreaseAllowance function (44ms)
+
+·----------------------------------|----------------------------|-------------|-----------------------------·
+|       [90mSolc version: 0.8.9[39m        ·  [90mOptimizer enabled: false[39m  ·  [90mRuns: 200[39m  ·  [90mBlock limit: 30000000 gas[39m  │
+···································|····························|·············|······························
+|  [32m[1mMethods[22m[39m                                                                                                  │
+·············|·····················|··············|·············|·············|···············|··············
+|  [1mContract[22m  ·  [1mMethod[22m             ·  [32mMin[39m         ·  [32mMax[39m        ·  [32mAvg[39m        ·  [1m# calls[22m      ·  [1musd (avg)[22m  │
+·············|·····················|··············|·············|·············|···············|··············
+|  [90mApeCoin[39m   ·  approve            ·       [36m46834[39m  ·      [31m46846[39m  ·      46840  ·           [90m10[39m  ·          [32m[90m-[32m[39m  │
+·············|·····················|··············|·············|·············|···············|··············
+|  [90mApeCoin[39m   ·  decreaseAllowance  ·           -  ·          -  ·      30050  ·            [90m3[39m  ·          [32m[90m-[32m[39m  │
+·············|·····················|··············|·············|·············|···············|··············
+|  [90mApeCoin[39m   ·  increaseAllowance  ·           -  ·          -  ·      47233  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+·············|·····················|··············|·············|·············|···············|··············
+|  [90mApeCoin[39m   ·  transfer           ·       [36m35045[39m  ·      [31m52157[39m  ·      50104  ·           [90m25[39m  ·          [32m[90m-[32m[39m  │
+·············|·····················|··············|·············|·············|···············|··············
+|  [90mApeCoin[39m   ·  transferFrom       ·           -  ·          -  ·      60296  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+·············|·····················|··············|·············|·············|···············|··············
+|  [32m[1mDeployments[22m[39m                     ·                                          ·  [1m% of limit[22m   ·             │
+···································|··············|·············|·············|···············|··············
+|  ApeCoin                         ·           -  ·          -  ·    1171683  ·        [90m3.9 %[39m  ·          [32m[90m-[32m[39m  │
+·----------------------------------|--------------|-------------|-------------|---------------|-------------·
+
+  22 passing (3s)
+
