@@ -1,0 +1,91 @@
+Generating typings for: 12 artifacts in dir: typechain for target: ethers-v5
+Successfully generated 21 typings!
+Compiled 12 Solidity files successfully
+
+  IoTeXNetwork AccessControl Test
+    AccessControl Granting/Revoking Functionality
+      ✓ Should prevent non-admins from granting the ADMIN_ROLE (59ms)
+      ✓ Should correctly grant the ADMIN_ROLE (24ms)
+      ✓ Should prevent non-admins from revoking the ADMIN_ROLE (92ms)
+      ✓ Should correctly revoke the ADMIN_ROLE (22ms)
+      ✓ Should prevent revoking the ADMIN_ROLE from an account that doesn't have it (51ms)
+    AccessControl grant custom roles
+      ✓ Should correctly grant a custom role (159ms)
+      ✓ Should correctly revoke a custom role (121ms)
+    AccessControl: Access Denied tests
+      ✓ Should not allow non-admin accounts to grant or revoke roles (78ms)
+
+  IoTeXNetwork Pausable Test
+    PAUSER_ROLE Functionality
+      ✓ Should correctly report the PAUSER_ROLE as the address who deployed the contract (7ms)
+      ✓ Should prevent non-admins from granting the PAUSER_ROLE (40ms)
+      ✓ Should correctly grant and revoke the PAUSER_ROLE (113ms)
+      ✓ Should prevent non-admins from revoking the PAUSER_ROLE (82ms)
+    Pausable Token Extension Functionality
+      ✓ Should initially be unpaused (3ms)
+      ✓ Should allow the owner to pause the contract (21ms)
+      ✓ Should not allow non-owner accounts to pause the contract (40ms)
+      ✓ Should allow the owner to unpause the contract (45ms)
+      ✓ Should not allow non-owner accounts to unpause the contract (63ms)
+      ✓ Should not allow transfers when paused (53ms)
+
+  IoTeXNetwork ERC20 Standard Test
+    Contract Initialization
+      ✓ Should correctly deploy the contract (1ms)
+      ✓ Should correctly report the token balance of the contract owner (7ms)
+      ✓ Should correctly report the token balance of any other address (7ms)
+      ✓ Should correctly report the token name (4ms)
+      ✓ Should correctly report the token symbol (4ms)
+      ✓ Should correctly report the token decimals (3ms)
+      ✓ Should correctly report the token total supply (5ms)
+    Token Transfer Functionality
+      ✓ Should correctly transfer tokens from the sender to the recipient (29ms)
+      ✓ Should correctly emit a Transfer event on token transfer (21ms)
+      ✓ Should revert when sender does not have sufficient balance for transfer (22ms)
+    Token transferFrom Functionality
+      ✓ Should correctly transfer tokens from the sender to the recipient using transferFrom function (37ms)
+      ✓ Should correctly update the balances of the sender, recipient, and spender on transferFrom function (32ms)
+      ✓ Should correctly emit a Transfer event on transferFrom function (24ms)
+      ✓ Should revert when spender does not have a sufficient allowance on transferFrom function (18ms)
+      ✓ Should revert when sender does not have a sufficient balance on transferFrom function (19ms)
+    Token Allowance Functionality
+      ✓ Should correctly set allowance for spender using approve function (22ms)
+      ✓ Should correctly emit an Approval event on allowance setting using approve function (21ms)
+      ✓ Should correctly report allowance for spender using allowance function (18ms)
+      ✓ Should correctly increase allowance for spender using increaseAllowance function (23ms)
+      ✓ Should correctly emit an Approval event on allowance increase using increaseAllowance function (21ms)
+      ✓ Should correctly decrease allowance for spender using decreaseAllowance function (39ms)
+      ✓ Should correctly emit an Approval event on allowance decrease using decreaseAllowance function (38ms)
+
+·--------------------------------------|----------------------------|-------------|-----------------------------·
+|         [90mSolc version: 0.8.9[39m          ·  [90mOptimizer enabled: false[39m  ·  [90mRuns: 200[39m  ·  [90mBlock limit: 30000000 gas[39m  │
+·······································|····························|·············|······························
+|  [32m[1mMethods[22m[39m                                                                                                      │
+·················|·····················|··············|·············|·············|···············|··············
+|  [1mContract[22m      ·  [1mMethod[22m             ·  [32mMin[39m         ·  [32mMax[39m        ·  [32mAvg[39m        ·  [1m# calls[22m      ·  [1musd (avg)[22m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  approve            ·       [36m46879[39m  ·      [31m46891[39m  ·      46885  ·           [90m10[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  decreaseAllowance  ·           -  ·          -  ·      30028  ·            [90m3[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  grantRole          ·       [36m52016[39m  ·      [31m52028[39m  ·      52027  ·           [90m12[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  increaseAllowance  ·           -  ·          -  ·      47344  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  pause              ·           -  ·          -  ·      47432  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  revokeRole         ·           -  ·          -  ·      30174  ·            [90m3[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  transfer           ·       [36m37277[39m  ·      [31m54389[39m  ·      52922  ·           [90m35[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  transferFrom       ·           -  ·          -  ·      62595  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [90mIoTeXNetwork[39m  ·  unpause            ·           -  ·          -  ·      25595  ·            [90m1[39m  ·          [32m[90m-[32m[39m  │
+·················|·····················|··············|·············|·············|···············|··············
+|  [32m[1mDeployments[22m[39m                         ·                                          ·  [1m% of limit[22m   ·             │
+·······································|··············|·············|·············|···············|··············
+|  IoTeXNetwork                        ·           -  ·          -  ·    2128118  ·        [90m7.1 %[39m  ·          [32m[90m-[32m[39m  │
+·--------------------------------------|--------------|-------------|-------------|---------------|-------------·
+
+  40 passing (5s)
+
