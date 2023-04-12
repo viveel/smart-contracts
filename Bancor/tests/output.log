@@ -1,0 +1,120 @@
+Generating typings for: 13 artifacts in dir: typechain for target: ethers-v5
+Successfully generated 23 typings!
+Compiled 13 Solidity files successfully
+
+  BancorNetworkTokenExample AccessControl Test
+    AccessControl Granting/Revoking Functionality
+      ✓ Should prevent non-admins from granting the ADMIN_ROLE (61ms)
+      ✓ Should correctly grant the ADMIN_ROLE (20ms)
+      ✓ Should prevent non-admins from revoking the ADMIN_ROLE (48ms)
+      ✓ Should correctly revoke the ADMIN_ROLE (39ms)
+      ✓ Should prevent revoking the ADMIN_ROLE from an account that doesn't have it (48ms)
+    AccessControl grant custom roles
+      ✓ Should correctly grant a custom role (113ms)
+      ✓ Should correctly revoke a custom role (117ms)
+    AccessControl: Access Denied tests
+      ✓ Should not allow non-admin accounts to grant or revoke roles (76ms)
+
+  BancorNetworkTokenExample Burnable Test
+    Burnable Token Extension Functionality
+      ✓ Should correctly burn tokens from the owner's account (28ms)
+      ✓ Should not allow burning more tokens than the sender has (23ms)
+      ✓ Should correctly burn tokens from the recipient's account after approval (51ms)
+      ✓ Should not allow burning more tokens than are approved by the account (73ms)
+      ✓ Should correctly decrease the allowance after burning tokens from the recipient's account (53ms)
+
+  BancorNetworkTokenExample Mintable Test
+    MINTER_ROLE Functionality
+      ✓ Should correctly report the MINTER_ROLE as the address who deployed the contract (5ms)
+      ✓ Should prevent non-admins from granting the MINTER_ROLE (39ms)
+      ✓ Should correctly grant and revoke the MINTER_ROLE (141ms)
+      ✓ Should prevent non-admins from revoking the MINTER_ROLE (38ms)
+    Mintable Token Extension Functionality
+      ✓ Should correctly mint tokens to the owner's account (27ms)
+      ✓ Should not allow non-owner accounts to mint tokens (40ms)
+      ✓ Should not allow non-owner accounts to mint tokens to another account's balance (40ms)
+      ✓ Should correctly increase the balance of recipient1 after minting tokens to the recipient's account (29ms)
+      ✓ Should not allow non-minter accounts to mint tokens (42ms)
+      ✓ Should correctly mint the maximum number of tokens (23ms)
+      ✓ Should correctly mint multiple batches of tokens (41ms)
+
+  BancorNetworkTokenExample Pausable Test
+    PAUSER_ROLE Functionality
+      ✓ Should correctly report the PAUSER_ROLE as the address who deployed the contract (5ms)
+      ✓ Should prevent non-admins from granting the PAUSER_ROLE (82ms)
+      ✓ Should correctly grant and revoke the PAUSER_ROLE (117ms)
+      ✓ Should prevent non-admins from revoking the PAUSER_ROLE (38ms)
+    Pausable Token Extension Functionality
+      ✓ Should initially be unpaused (3ms)
+      ✓ Should allow the owner to pause the contract (20ms)
+      ✓ Should not allow non-owner accounts to pause the contract (38ms)
+      ✓ Should allow the owner to unpause the contract (42ms)
+      ✓ Should not allow non-owner accounts to unpause the contract (59ms)
+      ✓ Should not allow transfers when paused (71ms)
+
+  BancorNetworkTokenExample ERC20 Standard Test
+    Contract Initialization
+      ✓ Should correctly deploy the contract (0ms)
+      ✓ Should correctly report the token balance of the contract owner (5ms)
+      ✓ Should correctly report the token balance of any other address (3ms)
+      ✓ Should correctly report the token name (4ms)
+      ✓ Should correctly report the token symbol (4ms)
+      ✓ Should correctly report the token decimals (3ms)
+      ✓ Should correctly report the token total supply (4ms)
+    Token Transfer Functionality
+      ✓ Should correctly transfer tokens from the sender to the recipient (30ms)
+      ✓ Should correctly emit a Transfer event on token transfer (23ms)
+      ✓ Should revert when sender does not have sufficient balance for transfer (23ms)
+    Token transferFrom Functionality
+      ✓ Should correctly transfer tokens from the sender to the recipient using transferFrom function (38ms)
+      ✓ Should correctly update the balances of the sender, recipient, and spender on transferFrom function (34ms)
+      ✓ Should correctly emit a Transfer event on transferFrom function (25ms)
+      ✓ Should revert when spender does not have a sufficient allowance on transferFrom function (19ms)
+      ✓ Should revert when sender does not have a sufficient balance on transferFrom function (19ms)
+    Token Allowance Functionality
+      ✓ Should correctly set allowance for spender using approve function (23ms)
+      ✓ Should correctly emit an Approval event on allowance setting using approve function (20ms)
+      ✓ Should correctly report allowance for spender using allowance function (18ms)
+      ✓ Should correctly increase allowance for spender using increaseAllowance function (23ms)
+      ✓ Should correctly emit an Approval event on allowance increase using increaseAllowance function (41ms)
+      ✓ Should correctly decrease allowance for spender using decreaseAllowance function (43ms)
+      ✓ Should correctly emit an Approval event on allowance decrease using decreaseAllowance function (40ms)
+
+·---------------------------------------------------|----------------------------|-------------|-----------------------------·
+|                [90mSolc version: 0.8.9[39m                ·  [90mOptimizer enabled: false[39m  ·  [90mRuns: 200[39m  ·  [90mBlock limit: 30000000 gas[39m  │
+····················································|····························|·············|······························
+|  [32m[1mMethods[22m[39m                                                                                                                   │
+······························|·····················|··············|·············|·············|···············|··············
+|  [1mContract[22m                   ·  [1mMethod[22m             ·  [32mMin[39m         ·  [32mMax[39m        ·  [32mAvg[39m        ·  [1m# calls[22m      ·  [1musd (avg)[22m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  approve            ·       [36m46879[39m  ·      [31m46891[39m  ·      46886  ·           [90m13[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  burn               ·           -  ·          -  ·      36402  ·            [90m1[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  burnFrom           ·           -  ·          -  ·      39745  ·            [90m2[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  decreaseAllowance  ·           -  ·          -  ·      30051  ·            [90m3[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  grantRole          ·       [36m52017[39m  ·      [31m52029[39m  ·      52028  ·           [90m13[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  increaseAllowance  ·           -  ·          -  ·      47278  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  mint               ·       [36m39485[39m  ·      [31m73685[39m  ·      70208  ·           [90m54[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  pause              ·           -  ·          -  ·      47454  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  revokeRole         ·           -  ·          -  ·      30152  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  transfer           ·       [36m37300[39m  ·      [31m54412[39m  ·      53582  ·           [90m62[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  transferFrom       ·           -  ·          -  ·      62595  ·            [90m4[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [90mBancorNetworkTokenExample[39m  ·  unpause            ·           -  ·          -  ·      25529  ·            [90m1[39m  ·          [32m[90m-[32m[39m  │
+······························|·····················|··············|·············|·············|···············|··············
+|  [32m[1mDeployments[22m[39m                                      ·                                          ·  [1m% of limit[22m   ·             │
+····················································|··············|·············|·············|···············|··············
+|  BancorNetworkTokenExample                        ·           -  ·          -  ·    2433502  ·        [90m8.1 %[39m  ·          [32m[90m-[32m[39m  │
+·---------------------------------------------------|--------------|-------------|-------------|---------------|-------------·
+
+  56 passing (8s)
+
